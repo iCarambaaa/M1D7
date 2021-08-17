@@ -115,7 +115,7 @@
         <script lang="text/javascript">
             //change H1 TEXT not working!?
             function changeH1Text() {
-                body.querySelectorAll("h1").innerHTML = "Have a nice day!";
+                document.querySelector("h1").innerHTML = "Have a nice day!";
             }
             // Function to change webpage background color
             function changeBodyBg(color) {
@@ -123,7 +123,7 @@
             }
             // change footer address not working !?
             function changeFooterAddress() {
-                document.body.footer.p.getElementById("foot").innerHTML = "Fake Road 69"
+                document.querySelector("#foot").innerHTML = "Fake Road 69"
             }
             // add css class to amazon links
             function addClass() {
@@ -136,7 +136,7 @@
 
         <footer>
             <p>SMART PRODUCTS STORE</h1>
-            <p id=foot>Imaginary Street 87</p>
+            <p id="foot">Imaginary Street 87</p>
             <p>81247 LONDON</p>
         </footer>
 

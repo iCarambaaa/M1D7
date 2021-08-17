@@ -6,98 +6,134 @@
 <link rel="stylesheet" href="">
 <style>
     table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-td, th {
-  border: 1px solid #817c7c;
-  text-align: left;
-  padding: 8px;
-}
+    td, th {
+        border: 1px solid #817c7c;
+        text-align: left;
+        padding: 8px;
+    }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
 
-footer {
-  background-color: #dddddd;
-  padding: 10px;
-}
-
+    footer {
+        background-color: #dddddd;
+        padding: 10px;
+        text-align: center;
+    }
 </style>
-<script src=""></script>
+
 <body>
 
 
-<div class="">
- <h1> SMART PRODUCTS STORE</h1>
+        <h1 id="sps">SMART PRODUCTS STORE</h1>
+        <button onclick="changeH1Text()">Change H1 text</button>
+        <button onclick="changeBodyBg('lime');">Change Webpage Background To: Lime</button>
+        <button onclick="changeBodyBg('white');">Change Webpage Background To: White</button>
+        <button onclick="changeFooterAddress()">Change address</button>
+    </div>
+    <h2>Top 5 Products</h2>
+    <table>
+        <tr>
+            <th>IMAGE</th>
+            <th>TITLE</th>
+            <th>DESCRIPTION</th>
+            <th>PRICE</th>
+            <th>BUY ON AMAZON</th>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/61WDO-1F4mS._AC_SL1280_.jpg" alt="Zenfone 8"
+                    style="width:18%"></td>
+            <td>ASUS Zenfone 8</td>
+            <td>waterprof, 16 GB RAM, 128 GB, Dual SIM</td>
+            <td>879,99$</td>
+            <td><a
+                    href="https://www.amazon.com/-/de/dp/B095S16FFL/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone+zenfone+8&qid=1629203598&sr=8-5">GO
+                    BUY NOW!</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/711rPP8yGeL._AC_SL1500_.jpg" alt="Sony Xperia XZ1 Compact"
+                    style="width:15%"></td>
+            <td>Sony Xperia XZ1 Compact</td>
+            <td>very small - very handy ;-)</td>
+            <td>199,95$</td>
+            <td>
+                <a
+                    href="https://www.amazon.com/-/de/dp/B074P5FMGC/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=sony+xz1+compact&qid=1629204024&sr=8-1">BUY
+                    BUY BUY!</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/81F-QC1N5WL._AC_SL1500_.jpg" alt="iPhone 8"
+                    style="width:10%"></td>
+            <td>Apple iPhone 8</td>
+            <td>64 GB, Space Grey</td>
+            <td>187,00$</td>
+            <td>
+                <a
+                    href="https://www.amazon.com/-/de/dp/B0775MV9K2/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iphone+5s&qid=1629204291&sr=8-1">l
+                    know u want it, don´t be shy - JUST BUY!</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/712zTX7XvxL._AC_SL1500_.jpg" alt="FOLD" style="width:15%">
+            </td>
+            <td>Galaxy Z Fold 2 5G</td>
+            <td>werkseitig entsperrtes Android-Handy | 256 GB Speicher | US Version Smartphone Tablet | 2-in-1
+                raffiniertes Design, Flex-Modus | Mystic Black </td>
+            <td>1.799,99$</td>
+            <td>
+                <a
+                    href="https://www.amazon.com/-/de/dp/B08GL5YRQT/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fold+samsung&qid=1629204539&sr=8-5">You
+                    bend - it folds! you pay - it´s yours!</a>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="https://m.media-amazon.com/images/I/81Ytn8iJCKL._AC_SL1500_.jpg" alt="CAT PHONE S"  style="width:12%"></td>
+            <td>CAT PHONE S</td>
+            <td>robustes, wasserdichtes Smartphone mit integrierter FLIR-Kamera</td>
+            <td>536,51$</td>
+            <td>
+                <a
+                    href="https://www.amazon.com/-/de/dp/B07DT7LBSK/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=phone+cat&qid=1629204905&sr=8-3">as
+                    sexy as you are! BUY!</a>
+            </td>
+        </tr>
+    </table>
 
-</div>
-<h2>Top 5 Products</h2>
-<table>
-    <tr>
-      <th>IMAGE</th>
-      <th>TITLE</th>
-      <th>DESCRIPTION</th>
-      <th>PRICE</th>
-      <th>BUY ON AMAZON</th>
-    </tr>
-    <tr>
-      <td><img src="https://m.media-amazon.com/images/I/61WDO-1F4mS._AC_SL1280_.jpg" alt="Zenfone 8" style="width:18%"></td>
-      <td>ASUS Zenfone 8</td>
-      <td>waterprof, 16 GB RAM, 128 GB, Dual SIM</td>
-      <td>879,99$</td>
-      <td><a href="https://www.amazon.com/-/de/dp/B095S16FFL/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=smartphone+zenfone+8&qid=1629203598&sr=8-5">GO BUY NOW!</a></td>
-    </tr>
-    <tr>
-        <td><img src="https://m.media-amazon.com/images/I/711rPP8yGeL._AC_SL1500_.jpg" alt="Sony Xperia XZ1 Compact" style="width:15%"></td>
-      <td>Sony Xperia XZ1 Compact</td>
-      <td>very small - very handy ;-)</td>
-      <td>199,95$</td>
-      <td>
-        <a href="https://www.amazon.com/-/de/dp/B074P5FMGC/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=sony+xz1+compact&qid=1629204024&sr=8-1">BUY BUY BUY!</a>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="https://m.media-amazon.com/images/I/81F-QC1N5WL._AC_SL1500_.jpg" alt="iPhone 8" style="width:10%"></td>
-      <td>Apple iPhone 8</td>
-      <td>64 GB, Space Grey</td>
-      <td>187,00$</td>
-      <td>
-        <a href="https://www.amazon.com/-/de/dp/B0775MV9K2/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=iphone+5s&qid=1629204291&sr=8-1">l know u want it, don´t be shy - JUST BUY!</a>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="https://m.media-amazon.com/images/I/712zTX7XvxL._AC_SL1500_.jpg" alt="FOLD" style="width:15%"></td>
-      <td>Galaxy Z Fold 2 5G</td>
-      <td>werkseitig entsperrtes Android-Handy | 256 GB Speicher | US Version Smartphone Tablet | 2-in-1 raffiniertes Design, Flex-Modus | Mystic Black </td>
-      <td>1.799,99$</td>
-      <td>
-        <a href="https://www.amazon.com/-/de/dp/B08GL5YRQT/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=fold+samsung&qid=1629204539&sr=8-5">You bend - it folds! you pay - it´s yours!</a>
-        </td>
-    </tr>
-    <tr>
-        <td><img src="https://m.media-amazon.com/images/I/81Ytn8iJCKL._AC_SL1500_.jpg" alt="CAT PHONE S" style="width:12%"></td>
-      <td>CAT PHONE S</td>
-      <td>robustes, wasserdichtes Smartphone mit integrierter FLIR-Kamera</td>
-      <td>536,51$</td>
-      <td>
-        <a href="https://www.amazon.com/-/de/dp/B07DT7LBSK/ref=sr_1_3?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=phone+cat&qid=1629204905&sr=8-3">as sexy as you are! BUY!</a>
-        </td>
-    </tr>
-  </table>
+    <h3>Message Board</h3>
+    <input type="text" class="form-control" id="txtNewMsg" placeholder="Message"></input>
+    <div class="input-group-append">
 
-  <h5>Message Board</h5>
-  <input type="text" class="form-control" id="txtNewMsg" placeholder="Message"></input> 
-  <div class="input-group-append">
+        <script lang="text/javascript">
+            //change H1 TEXT not working!?
+            function changeH1Text() {
+                document.querySelectorAll("h1").innerHTML = "Have a nice day!";
+            }
+            // Function to change webpage background color
+            function changeBodyBg(color) {
+                document.body.style.background = color;
+            }
+            // change footer address not working !?
+            function changeFooterAddress() {
+                document.body.footer.getElementById("foot").innerHTML = "Fake Road 69"
+            }
 
-  <footer>
-  <p>SMART PRODUCTS STORE</h1>
-    <p>Imaginary Street 87</p>
-    <p>81247 LONDON</p>
-</footer>
+        </script>
+
+
+
+        <footer>
+            <p>SMART PRODUCTS STORE</h1>
+            <p id = foot>Imaginary Street 87</p>
+            <p>81247 LONDON</p>
+        </footer>
 
 </body>
-</html> 
+
+</html>
